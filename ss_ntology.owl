@@ -1,0 +1,446 @@
+@prefix : <http://www.semanticweb.org/asus/ontologies/2024/0/untitled-ontology-13#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media> .
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Build
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Build> rdf:type owl:ObjectProperty ;
+                                                                                
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Deliver
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Deliver> rdf:type owl:ObjectProperty ;
+                                                                                  
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Provide> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Develop
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Develop> rdf:type owl:ObjectProperty ;
+                                                                                  
+                                                                                  rdfs:domain <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Company> ;
+                                                                                  
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> ;
+                                                                                  
+                                                                                  rdfs:domain <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Person> ;
+                                                                                  
+                                                                                  rdfs:range <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Product> ,
+                                                                                             <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Tool> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Generate
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Generate> rdf:type owl:ObjectProperty ;
+                                                                                   
+                                                                                   rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Provide
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Provide> rdf:type owl:ObjectProperty ;
+                                                                                  
+                                                                                  rdfs:range <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#BusinessActivity> ;
+                                                                                  
+                                                                                  rdfs:domain <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Company> ;
+                                                                                  
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Supply
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Supply> rdf:type owl:ObjectProperty ;
+                                                                                 
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Provide> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Write
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Write> rdf:type owl:ObjectProperty ;
+                                                                                
+                                                                                rdfs:range <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Article> ;
+                                                                                
+                                                                                rdfs:domain <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Company> ;
+                                                                                
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> ;
+                                                                                
+                                                                                rdfs:domain <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Person> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#create
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#create> rdf:type owl:ObjectProperty ;
+                                                                                 
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Write> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#offer
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#offer> rdf:type owl:ObjectProperty ;
+                                                                                
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Provide> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#print
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#print> rdf:type owl:ObjectProperty ;
+                                                                                
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Write> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#rewrite
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#rewrite> rdf:type owl:ObjectProperty ;
+                                                                                  
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Write> .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Administration
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Administration> rdf:type owl:Class ;
+                                                                                         
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#BusinessActivity> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Advertizing
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Advertizing> rdf:type owl:Class ;
+                                                                                      
+                                                                                      owl:equivalentClass <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Promotion> ;
+                                                                                      
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#BusinessActivity> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Agency
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Agency> rdf:type owl:Class ;
+                                                                                 
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Organization> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Article
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Article> rdf:type owl:Class ;
+                                                                                  
+                                                                                  owl:equivalentClass <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Essay> ,
+                                                                                                      <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Paper> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Author
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Author> rdf:type owl:Class ;
+                                                                                 
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Person> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Business
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Business> rdf:type owl:Class ;
+                                                                                   
+                                                                                   owl:equivalentClass <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Company> ,
+                                                                                                       <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Firm> ;
+                                                                                   
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Organization> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#BusinessActivity
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#BusinessActivity> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Channels
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Channels> rdf:type owl:Class ;
+                                                                                   
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Communication> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Client
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Client> rdf:type owl:Class ;
+                                                                                 
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Person> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Communication
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Communication> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Company
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Company> rdf:type owl:Class ;
+                                                                                  
+                                                                                  owl:equivalentClass <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Enterprise> ,
+                                                                                                      <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Firm> ;
+                                                                                  
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Organization> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Customer
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Customer> rdf:type owl:Class ;
+                                                                                   
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Person> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Database
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Database> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Enterprise
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Enterprise> rdf:type owl:Class ;
+                                                                                     
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Organization> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Essay
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Essay> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Existence
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Existence> rdf:type owl:Class ;
+                                                                                    
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#State> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Firm
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Firm> rdf:type owl:Class ;
+                                                                               
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Organization> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Framework
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Framework> rdf:type owl:Class ;
+                                                                                    
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Technology> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#LargeModel
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#LargeModel> rdf:type owl:Class ;
+                                                                                     
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#SpaCy> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Management
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Management> rdf:type owl:Class ;
+                                                                                     
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Administration> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Marketing
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Marketing> rdf:type owl:Class ;
+                                                                                    
+                                                                                    owl:equivalentClass <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Promotion> ;
+                                                                                    
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#BusinessActivity> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#MongoDB
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#MongoDB> rdf:type owl:Class ;
+                                                                                  
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Database> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#NER
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#NER> rdf:type owl:Class ;
+                                                                              
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#NlpTools> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Networks
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Networks> rdf:type owl:Class ;
+                                                                                   
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Communication> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#NlpTools
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#NlpTools> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Organization
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Organization> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Paper
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Paper> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Person
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Person> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Platform
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Platform> rdf:type owl:Class ;
+                                                                                   
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Technology> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Presence
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Presence> rdf:type owl:Class ;
+                                                                                   
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#State> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Product
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Product> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Promotion
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Promotion> rdf:type owl:Class ;
+                                                                                    
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#BusinessActivity> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Service
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Service> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#SmallModel
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#SmallModel> rdf:type owl:Class ;
+                                                                                     
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#SpaCy> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#SpaCy
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#SpaCy> rdf:type owl:Class ;
+                                                                                
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#NlpTools> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#State
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#State> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#System
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#System> rdf:type owl:Class ;
+                                                                                 
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Technology> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Technology
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Technology> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Tool
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Tool> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#User
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#User> rdf:type owl:Class ;
+                                                                               
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Person> .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+
