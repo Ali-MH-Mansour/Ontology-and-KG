@@ -28,7 +28,7 @@
 
 <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Deliver> rdf:type owl:ObjectProperty ;
                                                                                   
-                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Provide> .
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> .
 
 
 
@@ -69,7 +69,9 @@
                                                                                   
                                                                                   rdfs:domain <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Company> ;
                                                                                   
-                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> .
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> ;
+                                                                                  
+                                                                                  owl:equivalentProperty <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#offer> .
 
 
 
@@ -77,7 +79,7 @@
 
 <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Supply> rdf:type owl:ObjectProperty ;
                                                                                  
-                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Provide> .
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> .
 
 
 
@@ -87,11 +89,21 @@
                                                                                 
                                                                                 rdfs:range <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Article> ;
                                                                                 
-                                                                                rdfs:domain <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Company> ;
+                                                                                rdfs:domain <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Company> ,
+                                                                                            <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Person> ;
                                                                                 
-                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> ;
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#creatText> ;
                                                                                 
-                                                                                rdfs:domain <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Person> .
+                                                                                owl:equivalentProperty <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#print> ,
+                                                                                                       <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#rewrite> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#creatText
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#creatText> rdf:type owl:ObjectProperty ;
+                                                                                    
+                                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> .
 
 
 
@@ -99,7 +111,23 @@
 
 <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#create> rdf:type owl:ObjectProperty ;
                                                                                  
-                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Write> .
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#createAny> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#create0
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#create0> rdf:type owl:ObjectProperty ;
+                                                                                  
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#creatText> .
+
+
+
+###  http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#createAny
+
+<http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#createAny> rdf:type owl:ObjectProperty ;
+                                                                                    
+                                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> .
 
 
 
@@ -107,7 +135,7 @@
 
 <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#offer> rdf:type owl:ObjectProperty ;
                                                                                 
-                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Provide> .
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> .
 
 
 
@@ -115,7 +143,7 @@
 
 <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#print> rdf:type owl:ObjectProperty ;
                                                                                 
-                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Write> .
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> .
 
 
 
@@ -123,7 +151,7 @@
 
 <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#rewrite> rdf:type owl:ObjectProperty ;
                                                                                   
-                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Write> .
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/asus/ontologies/2024/0/ontology_social_media#Do> .
 
 
 
