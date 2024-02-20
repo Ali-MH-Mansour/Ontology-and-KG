@@ -1,4 +1,4 @@
-Subject_category,Subject,RelationType,RelName,Obj_category,Object
+SubjectCat,Subject,relType,relname,objCat,Object
 Person,Ali,write,write,Article,LLM
 Person,Ali,write,write,Article,KG and Ontology
 Person,Ali,work,works in,Company,OneForce
