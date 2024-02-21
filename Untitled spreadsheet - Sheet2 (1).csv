@@ -2,7 +2,7 @@ Subject_category,Subject,RelationType,RelName,Obj_category,Object
 Person,Ali,Write,write,Paper,LLM
 Person,Ali,Write,write,Article,KG and Ontology
 Person,Ali,Work_in,work,Company,OneForce
-Company,OneForce,use,uses,Spacy,spacy
+Company,OneForce,use,uses,Spacy,spacy parser
 Company,OneForce,Utilize,utilize,MongoDB,mongoDB
 Company,OneForce,use,use,NER,NER
 Company,Google,Write,Write,Essay,Gemini vs GPT
