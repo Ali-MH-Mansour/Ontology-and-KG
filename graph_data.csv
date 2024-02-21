@@ -3,10 +3,16 @@ Person,Ali,write,write,Article,LLM
 Person,Ali,write,write,Article,KG and Ontology
 Person,Ali,work,works in,Company,OneForce
 Company,OneForce,use,uses,Spacy,spacy
-Company,OneForce,utilize,utilize,MongoDB,mongoDB
-Company,OneForce,use,use,NER,NER
+Company,OneForce,utilize,utilizes,MongoDB,mongoDB
+Company,OneForce,use,uses,NER,NER
 Company,Google,Write,Write,Article,Gemini vs GPT
-Company,Google,Write,Write,Article,Gemini and GPT
-Company,SM 55,Provide,Provide,Marketing,SM marketing
-Company,SM 55,utilize,utilize,Channels,SM channels
-Company,VI-media2020,utilize,utilize,Channels,SM channels
+Company,Google,Write,Write,Article, Bard
+Company,SM 55,Provide,Provides,Marketing,social media marketing
+Company,SM 55,utilize,utilizes,Channels,social media channels
+Company,VI-media2020,utilize,utilizes,Channels, social media channels
+Company,Cetic,improve,improve,social media, real social media
+Company,Cetic,use,uses,ML, ML algorithms
+Person,Mark,create,create,App, apps
+Person,Mark,use,uses,ML, ML algorithms
+
+
